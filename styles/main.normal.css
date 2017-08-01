@@ -845,7 +845,7 @@ a.alignright {
     bottom: 0;
     background-repeat: no-repeat;
     background-position: 0% 0%;
-    background-color: #9145d8;
+    background-color: #6800cc;
     background-size: 50%;
     z-index: 4;
 }
@@ -1634,7 +1634,6 @@ input {
     width: 250px;
     height: 250px;
     margin: 0 auto 30px;
-    border-radius: 50%;
     box-sizing: border-box;
 }
 
@@ -3203,8 +3202,8 @@ p.correo1 {
             } */
     /*   .container {
               width: auto;
-              padding-left: 15px; 
-              padding-right: 15px; 
+              padding-left: 15px;
+              padding-right: 15px;
           } */
 }
 
@@ -3238,7 +3237,7 @@ p.correo1 {
               position: absolute;
               right: 0px;
               top: 285px;
-              z-index: 200; 
+              z-index: 200;
               -webkit-transform: scale(0.8);
               transform: scale(0.8);
             } */
@@ -3705,11 +3704,11 @@ p.correo1 {
 
 
 /*@media only screen and (max-width: 415px) {
-    
+
     .cel2 {
         top: 2376px;
     }
-    
+
 }*/
 
 @media only screen and (max-width: 412px) {
@@ -3883,10 +3882,10 @@ p.correo1 {
 
 
 /*
-@media (min-width: 780px) and (max-width: 870px) { 
+@media (min-width: 780px) and (max-width: 870px) {
   .cel2 {
   position: absolute;
-  left: 0px;        
+  left: 0px;
   top: 2150px;
   z-index: 50;
   }
@@ -3896,24 +3895,24 @@ p.correo1 {
 
 
 /*
-@media (min-width: 767px) and (max-width: 992px) { 
+@media (min-width: 767px) and (max-width: 992px) {
   .cel2 {
   position: absolute;
-  left: 19px;        
+  left: 19px;
   top: 2060px;
   z-index: 50;
   }
- 
+
 }
 
 /* Medium devices (desktops, 992px and up) */
 
 
 /*
-@media (min-width: 992px) and (max-width: 1199px) { 
+@media (min-width: 992px) and (max-width: 1199px) {
     .cel2 {
   position: absolute;
-  left: 30px;        
+  left: 30px;
   top: 1303px;
   z-index: 50;
 }
@@ -3924,14 +3923,14 @@ p.correo1 {
 
 
 /*
-@media (min-width: 1200px) { 
+@media (min-width: 1200px) {
   .cel2 {
   position: absolute;
-  left: 150px;        
+  left: 150px;
   top: 1350px;
   z-index: 50;
 }
-  
+
  }
 
 

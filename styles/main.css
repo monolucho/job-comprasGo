@@ -198,7 +198,7 @@ a.alignright{position:relative;z-index:5;}
 .section-bg2-img:after{bottom:-151px;}
 .section-bg-img .bg{position:absolute;left:0;top:0;right:0;bottom:0;background-repeat:no-repeat;background-position:50% 50%;background-size:cover;z-index:4;}
 .section-bg1-img .bg1{position:absolute;left:0;top:0;right:0;bottom:0;background-repeat:no-repeat;background-position:100% 0%;z-index:4;}
-.section-bg2-img .bg2{position:absolute;left:0;top:0;right:0;bottom:0;background-repeat:no-repeat;background-position:0% 0%;background-color:#9145d8;background-size:50%;z-index:4;}
+.section-bg2-img .bg2{position:absolute;left:0;top:0;right:0;bottom:0;background-repeat:no-repeat;background-position:0% 0%;background-color:#6800cc;background-size:50%;z-index:4;}
 .section-bg-img.section-bg-overlay{color:#fff;}
 .section-bg-img.section-bg-overlay .bg:before{content:'';background-image:url("../images/CG-header.png");position:absolute;left:0;top:0;right:0;bottom:0;background-repeat:no-repeat;background-position:50% 50%;background-size:cover;z-index:5;}
 .section-bg-img.section-bg-img-dark{color:#fff;}
@@ -331,7 +331,7 @@ input{font-family:cerebrisans-book;font-size:12px;}
 .separator.l:before{margin-left:5px;}
 .separator.r:before{margin-left:-50px;}
 .site-photo,
-.profile-photo{position:relative;display:inline-block;overflow:hidden;width:250px;height:250px;margin:0 auto 30px;border-radius:50%;box-sizing:border-box;}
+.profile-photo{position:relative;display:inline-block;overflow:hidden;width:250px;height:250px;margin:0 auto 30px;box-sizing:border-box;}
 .site-photo img,
 .profile-photo img{width:100%;max-width:100%;height:auto;}
 .intro{position:relative;padding:100px 0;z-index:10;text-align:center;}
