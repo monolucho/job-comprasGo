@@ -3,43 +3,52 @@
 })
 */
 var valCorreo = '';
-
+console.log(constantes.servicioWeb);
 function registrar() {
     var copiarCorreo = $('#correo').val();
     $('#userCorreo').val(copiarCorreo);
 
-    $("#formulario1").validate({
-        rules: {
-            correo: {
-                required: true,
-                email: true,
+    var email = $('#correo').val();
+    valCorreo = 'correo';
+    $('#usuarioModal').modal();
 
-            }
-        },
-        messages: {
-            correo: {
-                required: "",
-                email: ""
-            }
-        },
-        submitHandler: function(form) {
-            var email = $('#correo').val();
-            valCorreo = 'correo';
-            $('#usuarioModal').modal();
-            //enviar(email);
-            //$('#myModal').modal();
-            //$('#correo').val('');
+    /* $("#formulario1").validate({
+             rules: {
+              correo: {
+                  required: true,
+                  email: true,
 
-        }
-    });
+              }
+          },
+          messages: {
+             correo: {
+                  required: "",
+                  email: ""
+              }
+          },
+          submitHandler: function(form) {
+              var email = $('#correo').val();
+              valCorreo = 'correo';
+              $('#usuarioModal').modal();
+              //enviar(email);
+              //$('#myModal').modal();
+              //$('#correo').val('');
 
-
+         }
+      });*/
 }
 
 
 function registrar2() {
 
-    $("#formulario3").validate({
+    var email = $('#correo3').val();
+    valCorreo = 'correo3';
+    var copiarCorreo = $('#correo3').val();
+    $('#userCorreo').val(copiarCorreo);
+    $('#usuarioModal').modal();
+    $('#correo3').val('');
+
+    /*$("#formulario3").validate({
         rules: {
             correo3: {
                 required: true,
@@ -66,7 +75,7 @@ function registrar2() {
             $('#correo3').val('');
 
         }
-    });
+    });*/
 
 
 }
@@ -167,7 +176,7 @@ function enviar(email) {
         }
     });
 
-    xhr.open("POST", "https://script.google.com/macros/s/AKfycbx4dQyYw0ZrJMNleMgEAKnMmHZO8Pc2ZJ-NTeJCiwebV2c3M3A/exec");
+    xhr.open("POST", constantes.servicioWeb);
 
     xhr.send(data);
 }
@@ -176,8 +185,8 @@ function enviar1() {
     var data = new FormData();
     data.append("tipo", "REGISTRO");
     data.append("correo", document.getElementById("correo1").value);
-    //     data.append("correo", document.getElementById("correo").value);
-    //   data.append("telefono", document.getElementById("telefono").value);
+    //data.append("correo", document.getElementById("correo").value);
+    //data.append("telefono", document.getElementById("telefono").value);
     // data.append("ciudad", document.getElementById("ciudad").value);
 
     var xhr = new XMLHttpRequest();
@@ -189,7 +198,7 @@ function enviar1() {
         }
     });
 
-    xhr.open("POST", "https://script.google.com/macros/s/AKfycbx4dQyYw0ZrJMNleMgEAKnMmHZO8Pc2ZJ-NTeJCiwebV2c3M3A/exec");
+    xhr.open("POST", constantes.servicioWeb);
 
     xhr.send(data);
 }
@@ -267,7 +276,7 @@ function enviarForm() {
                 }
             });
 
-            xhr.open("POST", "https://script.google.com/macros/s/AKfycbx4dQyYw0ZrJMNleMgEAKnMmHZO8Pc2ZJ-NTeJCiwebV2c3M3A/exec");
+            xhr.open("POST", constantes.servicioWeb);
             xhr.send(data);
             //enviar(email5);
             //$('#myModal').modal();
@@ -350,7 +359,7 @@ function userForm() {
                 }
             });
 
-            xhr.open("POST", "https://script.google.com/macros/s/AKfycbx4dQyYw0ZrJMNleMgEAKnMmHZO8Pc2ZJ-NTeJCiwebV2c3M3A/exec");
+            xhr.open("POST", constantes.servicioWeb);
             xhr.send(data);
             //enviar(email5);
             //$('#myModal').modal();
